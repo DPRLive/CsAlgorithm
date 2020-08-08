@@ -1,0 +1,13 @@
+D:\Program Files\1.unity\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.csprojAssemblyReference.cache
+D:\Program Files\1.unity\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.AssemblyInfoInputs.cache
+D:\Program Files\1.unity\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.AssemblyInfo.cs
+D:\Program Files\1.unity\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.csproj.CoreCompileInputs.cache
+D:\Program Files\1.unity\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.exe
+D:\Program Files\1.unity\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.deps.json
+D:\Program Files\1.unity\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.runtimeconfig.json
+D:\Program Files\1.unity\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.runtimeconfig.dev.json
+D:\Program Files\1.unity\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.dll
+D:\Program Files\1.unity\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.pdb
+D:\Program Files\1.unity\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.dll
+D:\Program Files\1.unity\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.pdb
+D:\Program Files\1.unity\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.genruntimeconfig.cache

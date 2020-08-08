@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Algorithm
+{
+    //링크드 리스트 구현
+    class MyList<T>
+    {
+        public Data;
+        public MyList<T> Next;
+        public MyList<T> Prev;
+    }
+
+    class MyLinkList<T>
+    {
+        public MyList<T> Head = null;
+        public MyList<T> Tail = null;
+        public int Count = 0;
+
+        public MyList<T> AddLast(T data) //O(1)
+        {
+            MyList<T> newList = new MyList<T>();
+            newList.Data = data;
+
+            // 아직 데이터가 아예 없으면 새로 추가한 데이터가 Head
+            if(Head == null)
+                Head = newList;
+
+            // 기존에 마지막 데이터가 있었다면 기존 마지막 데이터와 새 데이터를 연결
+            if(Tail != null)
+            {
+                Tail.Next = newList;
+                newList.Prev = Tail;
+            }
+
+            Tail = newList;
+            Count++;
+            return newList;
+        }
+
+        public void Remove(MyList<T> MyList) //O(1)
+        {
+            // 기존 첫번째 데이터의 다음 데이터를 첫번째 데이터로 만듦.
+            if (Head == MyList)
+                Head = Head.Next;
+
+            // 기존의 마지막 데이터의 이전 데이터를 마지막 데이터로 만듦.
+            if (Tail == MyList)
+                Tail = Tail.Prev;
+            
+            if (MyList.Prev != null)
+                MyList.Prev.Next = MyList.Next;
+                //이전 데이터의 다음 데이터는 현재 삭제할 데이터의 다음데이터로 변경
+            
+            if (MyList.Next != null)
+                MyList.Next.Prev = room.Prev;
+
+        }
+    }
+
+    class Board
+    {
+        public int[] _data = new int[25]; //배열
+        public LinkedList<int> _data3 = new LinkedList<int>(); //연결리스트
+
+        public void Initialize()
+        {
+            _data3.AddLast(101);
+            _data3.AddLast(102);
+            LinkedListNode<int> node = _data3.AddLast(103);
+            //추가와 동시에 노드를 기억. 
+            //이렇게 하면 노드를 기억해서 링크드 리스트의 중간접근 못하는걸 하게함.
+            _data3.AddLast(104);
+            _data3.AddLast(105);
+            //데이터 찾을때는 n개의 데이터를 다 뒤져봐야해서 O(n)임. 느리다.
+            _data3.Remove(node);
+
+        }
+    }
+}
