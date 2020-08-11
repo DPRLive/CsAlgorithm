@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program Files\\1.unity\\Algorithm\\Algorithm.csproj",
-      "projectName": "Algorithm",
-      "projectPath": "D:\\Program Files\\1.unity\\Algorithm\\Algorithm.csproj",
+      "projectUniqueName": "D:\\Program Files\\1.unity\\CsAlgorithm\\CsAlgorithm.csproj",
+      "projectName": "CsAlgorithm",
+      "projectPath": "D:\\Program Files\\1.unity\\CsAlgorithm\\CsAlgorithm.csproj",
       "packagesPath": "C:\\Users\\Cyber\\.nuget\\packages\\",
-      "outputPath": "D:\\Program Files\\1.unity\\Algorithm\\obj\\",
+      "outputPath": "D:\\Program Files\\1.unity\\CsAlgorithm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cyber\\AppData\\Roaming\\NuGet\\NuGet.Config"

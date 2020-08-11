@@ -1,0 +1,13 @@
+D:\Program Files\1.unity\CsAlgorithm\bin\Debug\netcoreapp3.1\CsAlgorithm.exe
+D:\Program Files\1.unity\CsAlgorithm\bin\Debug\netcoreapp3.1\CsAlgorithm.deps.json
+D:\Program Files\1.unity\CsAlgorithm\bin\Debug\netcoreapp3.1\CsAlgorithm.runtimeconfig.json
+D:\Program Files\1.unity\CsAlgorithm\bin\Debug\netcoreapp3.1\CsAlgorithm.runtimeconfig.dev.json
+D:\Program Files\1.unity\CsAlgorithm\bin\Debug\netcoreapp3.1\CsAlgorithm.dll
+D:\Program Files\1.unity\CsAlgorithm\bin\Debug\netcoreapp3.1\CsAlgorithm.pdb
+D:\Program Files\1.unity\CsAlgorithm\obj\Debug\netcoreapp3.1\CsAlgorithm.csprojAssemblyReference.cache
+D:\Program Files\1.unity\CsAlgorithm\obj\Debug\netcoreapp3.1\CsAlgorithm.AssemblyInfoInputs.cache
+D:\Program Files\1.unity\CsAlgorithm\obj\Debug\netcoreapp3.1\CsAlgorithm.AssemblyInfo.cs
+D:\Program Files\1.unity\CsAlgorithm\obj\Debug\netcoreapp3.1\CsAlgorithm.csproj.CoreCompileInputs.cache
+D:\Program Files\1.unity\CsAlgorithm\obj\Debug\netcoreapp3.1\CsAlgorithm.dll
+D:\Program Files\1.unity\CsAlgorithm\obj\Debug\netcoreapp3.1\CsAlgorithm.pdb
+D:\Program Files\1.unity\CsAlgorithm\obj\Debug\netcoreapp3.1\CsAlgorithm.genruntimeconfig.cache
