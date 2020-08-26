@@ -7,69 +7,15 @@ namespace CsAlgorithm
     public class Board
     {
         const char CIRCLE = '\u25cf';
-        public TileType[,] _tile;
-        public int _size;
+        public TileType[,] _tile {get; private set;}
+        public int _size {get; private set;}
+
+        Player _player;
 
         public enum TileType
         {
             Empty,
             Wall,
-        }
-
-        // binary tree 미로생성 알고리즘 
-        public void GenerateByBinaryTree() 
-        {
-            //길 막기 작업
-            for(int y = 0; y < _size; y++)
-            {
-                for(int x = 0; x < _size; x++)
-                {
-                    if(x % 2 == 0  || y % 2 == 0)
-                        _tile[y,x] = TileType.Wall;
-                    else 
-                        _tile[y,x] = TileType.Empty;
-                }
-            }
-
-            // 랜덤으로 우측 혹은 아래로 길뚫기
-            Random rand = new Random();
-            for(int y = 0; y < _size; y++)
-            {
-                for(int x = 0; x < _size; x++)
-                {
-                    if(x % 2 == 0  || y % 2 == 0)
-                        continue;
-
-                    if(y == _size - 2 && x == _size - 2)
-                        continue;
-                    
-                    // y 맨끝까지 갔으면 강제로 오른쪽 뚫기
-                    if(y == _size - 2)
-                    {
-                        _tile[y,x+1] = TileType.Empty;
-                        continue;
-                    }
-                    
-                    // x 맨끝까지 갔으면 강제로 왼쪽 뚫기
-                    if(x == _size - 2)
-                    {
-                        _tile[y + 1,x] = TileType.Empty;
-                        continue;
-
-                    }
-                    // 랜덤으로 우측뚫기
-                    if(rand.Next(0,2) == 0)
-                    {
-                        _tile[y,x+1] = TileType.Empty;
-                    }
-                    //우측 아니면 아래 뚫기
-                    else
-                    {
-                        _tile[y+1,x] = TileType.Empty;
-
-                    }
-                }
-            }
         }
 
         //SideWinder 미로생성 알고리즘
@@ -136,11 +82,13 @@ namespace CsAlgorithm
             }
         }
 
-        public void Initialize(int size)
+        public void Initialize(int size, Player player)
         {
             // 벽을 다 막아주려면 사이즈가 홀수여야함
             if (size % 2 == 0)
                 return;
+
+            _player = player;
 
             _tile = new TileType[size,size];
             _size = size;
@@ -154,7 +102,11 @@ namespace CsAlgorithm
             {
                 for(int x = 0; x < _size; x++)
                 {
-                    Console.ForegroundColor = GetTileColor(_tile[y,x]);
+                    //플레이어 좌표를 가져오고, 그 좌표랑 현재 좌표가 같으면 플레이어 색상적용
+                    if (y == _player.PosY && x == _player.PosX )
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                    else    
+                        Console.ForegroundColor = GetTileColor(_tile[y,x]);
                     Console.Write(CIRCLE);
                 }
                 Console.WriteLine();
